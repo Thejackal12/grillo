@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sara Grillo</title>
+<style>
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This ensures that the image does not have extra space around it */
+    margin: 0 auto; /* This centers the image in the page */
+  }
+</style>
+<script>
+  function switchImage() {
+    var image = document.getElementById('switchableImage');
+    if (image.src.match('vola_GRILLO-1.png')) {
+      image.src = 'vola_GRILLO-2.png';
+    } else {
+      image.src = 'vola_GRILLO-1.png';
+    }
+  }
+</script>
+</head>
+<body>
+
+<img id="switchableImage" src="vola_GRILLO-1.png" alt="Image Switcher" onclick="switchImage()">
+
+</body>
+</html>
